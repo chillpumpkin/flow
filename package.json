@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "@clerk/clerk-react": "^5.11.0",
+    "@clerk/nextjs": "^5.7.2",
+    "@next/font": "^14.2.15",
+    "@shadcn/ui": "^0.0.4",
+    "convex": "^1.16.5",
+    "shadcn": "^2.1.0"
+  }
+}
