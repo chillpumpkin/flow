@@ -7,12 +7,12 @@ import { ReactNode } from "react";
 
 export default function Providers({children} : {children: ReactNode}) {
 
-    const convex = new ConvexReactClient(process.env.CONVEX_URL as string);
+    const convex = new ConvexReactClient("https://courteous-armadillo-947.convex.cloud");
     return (
-        <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY as string}>
-        <ConvexProviderWithClerk client={convex} useAuth={useAuth}>
-            {children}
-        </ConvexProviderWithClerk>
+        <ClerkProvider publishableKey={"pk_test_bm90ZWQtcmhpbm8tODkuY2xlcmsuYWNjb3VudHMuZGV2JA"}>
+            <ConvexProviderWithClerk client={convex} useAuth={useAuth}>
+                {children}
+            </ConvexProviderWithClerk>
         </ClerkProvider>
     );
 }
